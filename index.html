@@ -11,14 +11,15 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <nav>
-        <img src="./images/logo.svg" alt="logo">
-        <button class="btn btn-secondary">Try It Free</button>
-      </nav>
+    <nav class="flex">
+      <img src="./images/logo.svg" class="logo" alt="logo">
+      <button class="btn btn-secondary">Try It Free</button>
+    </nav>
+
+    <div class="container flex">
   
-      <div>
-        <h1>Build The Community Your Fans Will Love</h1>
+      <div class="info">
+        <h1>Build The Community <br> Your Fans Will Love</h1>
       
         <p>
           Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
@@ -30,39 +31,45 @@
     </div>
   </header>
 
-  <section class="middle">
+  <section>
     <div class="container">
-      <div class="box">
+      <div class="box flex">
+        <div>
+          <h2>Grow Together</h2>
+  
+          <p>
+            Generate meaningful discussions with your audience and build a strong, loyal community.
+            Think of the insightful conversations you miss out on with a feedback form.
+          </p>
+        </div>
+
         <img src="./images/illustration-grow-together.svg" alt="illustration">
-
-        <h2>Grow Together</h2>
-
-        <p>
-          Generate meaningful discussions with your audience and build a strong, loyal community.
-          Think of the insightful conversations you miss out on with a feedback form.
-        </p>
       </div>
 
-      <div class="box box-reverse">
+      <div class="box flex box-reverse">
+        <div>
+          <h2>Flowing Conversations</h2>
+  
+          <p>
+            You wouldn't paginate a conversation in real life, so why do it online? Our threads
+            have just-in-time loading for a more natural flow.
+          </p>
+        </div>
+
         <img src="./images/illustration-flowing-conversation.svg" alt="illustration">
-
-        <h2>Flowing Conversations</h2>
-
-        <p>
-          You wouldn't paginate a conversation in real life, so why do it online? Our threads
-          have just-in-time loading for a more natural flow.
-        </p>
       </div>
 
-      <div class="box">
+      <div class="box flex">
+        <div>
+          <h2>Your Users</h2>
+  
+          <p>
+            It takes no time at all to integrate Huddle with your app's authentication solution.
+            This means, once signed in to your app, your users can start chatting immediately.
+          </p>
+        </div>
+
         <img src="./images/illustration-your-users.svg" alt="illustration">
-
-        <h2>Your Users</h2>
-
-        <p>
-          It takes no time at all to integrate Huddle with your app's authentication solution.
-          This means, once signed in to your app, your users can start chatting immediately.
-        </p>
       </div>
 
       <div class="box popup">
@@ -74,31 +81,42 @@
 
   <footer>
     <div class="container">
-      <img src="./images/logo-white.svg" alt="logo-footer">
-      <ul>
-        <li>
-          Lorem ipsum dolor sit amet, consectetur <br>
-          adipiscing elit, sed do eiusmod tempor <br>
-          incididunt ut labore et dolore magna aliqua
-        </li>
-        <li>+1-543-123-4567</li>
-        <li>example@huddle.com</li>
-      </ul>
+      <img src="./images/logo-white.svg" class="logo" alt="logo-footer">
 
-      <ul>
-        <li>About Us</li>
-        <li>What We Do</li>
-        <li>FAQ</li>
-      </ul>
+      <div class="list flex">
+        <ul class="first-list">
+          <li>
+            Lorem ipsum dolor sit amet, consectetur <br>
+            adipiscing elit, sed do eiusmod tempor <br>
+            incididunt ut labore et dolore magna aliqua
+          </li>
+          <li>+1-543-123-4567</li>
+          <li>example@huddle.com</li>
+        </ul>
+  
+        <ul>
+          <li>About Us</li>
+          <li>What We Do</li>
+          <li>FAQ</li>
+        </ul>
+  
+        <ul>
+          <li>Career</li>
+          <li>Blog</li>
+          <li>Contact Us</li>
+        </ul>
 
-      <ul>
-        <li>Career</li>
-        <li>Blog</li>
-        <li>Contact Us</li>
-      </ul>
+        <ul class="social-media flex">
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
       
       <small>&copy; Copyright 2018 Huddle. All rights reserved.</small>
     </div>
   </footer>
+
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest"></script>
 </body>
 </html>
