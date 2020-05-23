@@ -201,6 +201,7 @@ ul.social-media a:hover {
 
 footer small {
     float: right;
+    font-size: .6em;
 }
 
 
@@ -266,7 +267,7 @@ footer small {
     }
 
     .box {
-        padding: 70px 22px;
+        padding: 70px 22px 50px;
         flex-direction: column-reverse;
         height: 560px;
         text-align: center;
