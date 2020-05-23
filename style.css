@@ -78,7 +78,7 @@ header {
     background-image: url(./images/bg-hero-desktop.svg);
     background-color: hsl(193, 100%, 96%);
     background-size: cover;
-    padding: 50px 0 60px;
+    padding: 40px 0 60px;
 }
 
 nav {
