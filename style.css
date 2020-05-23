@@ -161,26 +161,33 @@ section .container {
 footer {
     color: rgba(255, 255, 255, 0.8);
     background-color: hsl(192, 100%, 9%);
-    padding: 150px 100px 50px;
+    padding: 150px 50px 50px;
 }
 
 footer .container {
-    width: auto;
+    width: 100%;
 }
 
 footer .list {
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
+    width: 100%;
 }
 
 footer ul {
-    margin: 30px 100px 30px 0;
+    margin: 30px 0 30px 0;
 }
 
 footer ul li {
     list-style: none;
+    white-space: nowrap;
     margin-bottom: 20px;
     font-size: 0.75em;
+    cursor: pointer;
+}
+
+footer ul li:hover {
+    color: #fff;
 }
 
 ul.social-media a {
@@ -193,8 +200,12 @@ ul.social-media a:hover {
 }
 
 .social-media li {
-    margin: 0 10px;
-    padding: 5px 8px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
     border: 1px solid #fff;
     border-radius: 50%;
 }
@@ -208,7 +219,7 @@ footer small {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 725px) {
     /* ROOT */
 
     h1 {
@@ -236,6 +247,10 @@ footer small {
     }
 
     /* HEADER */
+
+    header {
+        background-image: url(./images/bg-hero-mobile.svg);
+    }
 
     header nav.flex {
         flex-direction: row;
